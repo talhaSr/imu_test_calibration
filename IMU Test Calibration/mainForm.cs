@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IMU_Test_Calibration
 {
-    public partial class Form1 : Form
+    public partial class f_main : Form
     {
-        public Form1()
+        public f_main()
         {
             InitializeComponent();
         }

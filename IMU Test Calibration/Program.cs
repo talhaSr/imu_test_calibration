@@ -16,7 +16,7 @@ namespace IMU_Test_Calibration
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new f_main());
         }
     }
 }

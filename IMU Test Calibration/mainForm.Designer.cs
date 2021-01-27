@@ -1,7 +1,7 @@
 ﻿
 namespace IMU_Test_Calibration
 {
-    partial class Form1
+    partial class f_main
     {
         /// <summary>
         ///Gerekli tasarımcı değişkeni.
@@ -29,10 +29,17 @@ namespace IMU_Test_Calibration
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // f_main
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Name = "f_main";
+            this.Text = "IMU Test and Calibration";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
