@@ -142,7 +142,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;picBox_logo_1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="label_temp_val.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -940,7 +940,7 @@
     <value>12, 205</value>
   </data>
   <data name="groupBox_imuData.Size" type="System.Drawing.Size, System.Drawing">
-    <value>312, 423</value>
+    <value>312, 414</value>
   </data>
   <data name="groupBox_imuData.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -958,22 +958,286 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox_imuData.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label_comStatus.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_comStatus.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt, style=Italic</value>
+  </data>
+  <data name="label_comStatus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_comStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 155</value>
+  </data>
+  <data name="label_comStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 18</value>
+  </data>
+  <data name="label_comStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="label_comStatus.Text" xml:space="preserve">
+    <value>Not Connected</value>
+  </data>
+  <data name="&gt;&gt;label_comStatus.Name" xml:space="preserve">
+    <value>label_comStatus</value>
+  </data>
+  <data name="&gt;&gt;label_comStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_comStatus.Parent" xml:space="preserve">
+    <value>groupBox_com</value>
+  </data>
+  <data name="&gt;&gt;label_comStatus.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label_status.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_status.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Underline</value>
+  </data>
+  <data name="label_status.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_status.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 154</value>
+  </data>
+  <data name="label_status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 20</value>
+  </data>
+  <data name="label_status.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="label_status.Text" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="&gt;&gt;label_status.Name" xml:space="preserve">
+    <value>label_status</value>
+  </data>
+  <data name="&gt;&gt;label_status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_status.Parent" xml:space="preserve">
+    <value>groupBox_com</value>
+  </data>
+  <data name="&gt;&gt;label_status.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="button_cancel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="button_cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 116</value>
+  </data>
+  <data name="button_cancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 28</value>
+  </data>
+  <data name="button_cancel.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="button_cancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;button_cancel.Name" xml:space="preserve">
+    <value>button_cancel</value>
+  </data>
+  <data name="&gt;&gt;button_cancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_cancel.Parent" xml:space="preserve">
+    <value>groupBox_com</value>
+  </data>
+  <data name="&gt;&gt;button_cancel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button_connect.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="button_connect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 116</value>
+  </data>
+  <data name="button_connect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 28</value>
+  </data>
+  <data name="button_connect.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="button_connect.Text" xml:space="preserve">
+    <value>Connect</value>
+  </data>
+  <data name="&gt;&gt;button_connect.Name" xml:space="preserve">
+    <value>button_connect</value>
+  </data>
+  <data name="&gt;&gt;button_connect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_connect.Parent" xml:space="preserve">
+    <value>groupBox_com</value>
+  </data>
+  <data name="&gt;&gt;button_connect.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="comboBox_baudrates.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="comboBox_baudrates.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 70</value>
+  </data>
+  <data name="comboBox_baudrates.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 28</value>
+  </data>
+  <data name="comboBox_baudrates.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;comboBox_baudrates.Name" xml:space="preserve">
+    <value>comboBox_baudrates</value>
+  </data>
+  <data name="&gt;&gt;comboBox_baudrates.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_baudrates.Parent" xml:space="preserve">
+    <value>groupBox_com</value>
+  </data>
+  <data name="&gt;&gt;comboBox_baudrates.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label_baudrate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_baudrate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label_baudrate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_baudrate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 73</value>
+  </data>
+  <data name="label_baudrate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 20</value>
+  </data>
+  <data name="label_baudrate.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="label_baudrate.Text" xml:space="preserve">
+    <value>Baudrate:</value>
+  </data>
+  <data name="&gt;&gt;label_baudrate.Name" xml:space="preserve">
+    <value>label_baudrate</value>
+  </data>
+  <data name="&gt;&gt;label_baudrate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_baudrate.Parent" xml:space="preserve">
+    <value>groupBox_com</value>
+  </data>
+  <data name="&gt;&gt;label_baudrate.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="comboBox_comPorts.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="comboBox_comPorts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 33</value>
+  </data>
+  <data name="comboBox_comPorts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 28</value>
+  </data>
+  <data name="comboBox_comPorts.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;comboBox_comPorts.Name" xml:space="preserve">
+    <value>comboBox_comPorts</value>
+  </data>
+  <data name="&gt;&gt;comboBox_comPorts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_comPorts.Parent" xml:space="preserve">
+    <value>groupBox_com</value>
+  </data>
+  <data name="&gt;&gt;comboBox_comPorts.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label_comPort.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_comPort.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label_comPort.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_comPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 36</value>
+  </data>
+  <data name="label_comPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="label_comPort.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label_comPort.Text" xml:space="preserve">
+    <value>Port:</value>
+  </data>
+  <data name="&gt;&gt;label_comPort.Name" xml:space="preserve">
+    <value>label_comPort</value>
+  </data>
+  <data name="&gt;&gt;label_comPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_comPort.Parent" xml:space="preserve">
+    <value>groupBox_com</value>
+  </data>
+  <data name="&gt;&gt;label_comPort.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="groupBox_com.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
+  </data>
+  <data name="groupBox_com.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="groupBox_com.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 187</value>
+  </data>
+  <data name="groupBox_com.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="groupBox_com.Text" xml:space="preserve">
+    <value>COM</value>
+  </data>
+  <data name="&gt;&gt;groupBox_com.Name" xml:space="preserve">
+    <value>groupBox_com</value>
+  </data>
+  <data name="&gt;&gt;groupBox_com.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_com.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox_com.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+    <value>12, 625</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>312, 187</value>
+    <value>312, 224</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>COM</value>
+    <value>Bias and Offset Calibration</value>
   </data>
   <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
     <value>groupBox1</value>
@@ -985,6 +1249,516 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label_gamma.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_gamma.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label_gamma.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_gamma.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 164</value>
+  </data>
+  <data name="label_gamma.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="label_gamma.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="label_gamma.Text" xml:space="preserve">
+    <value>γ:</value>
+  </data>
+  <data name="&gt;&gt;label_gamma.Name" xml:space="preserve">
+    <value>label_gamma</value>
+  </data>
+  <data name="&gt;&gt;label_gamma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_gamma.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label_gamma.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label_beta.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_beta.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label_beta.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_beta.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 144</value>
+  </data>
+  <data name="label_beta.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 20</value>
+  </data>
+  <data name="label_beta.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="label_beta.Text" xml:space="preserve">
+    <value>β:</value>
+  </data>
+  <data name="&gt;&gt;label_beta.Name" xml:space="preserve">
+    <value>label_beta</value>
+  </data>
+  <data name="&gt;&gt;label_beta.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_beta.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label_beta.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label_alpha.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_alpha.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label_alpha.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_alpha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 124</value>
+  </data>
+  <data name="label_alpha.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 20</value>
+  </data>
+  <data name="label_alpha.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="label_alpha.Text" xml:space="preserve">
+    <value>α:</value>
+  </data>
+  <data name="&gt;&gt;label_alpha.Name" xml:space="preserve">
+    <value>label_alpha</value>
+  </data>
+  <data name="&gt;&gt;label_alpha.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_alpha.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label_alpha.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label_eulerAngles.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_eulerAngles.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Underline</value>
+  </data>
+  <data name="label_eulerAngles.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_eulerAngles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 101</value>
+  </data>
+  <data name="label_eulerAngles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 20</value>
+  </data>
+  <data name="label_eulerAngles.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="label_eulerAngles.Text" xml:space="preserve">
+    <value>Euler Angles</value>
+  </data>
+  <data name="&gt;&gt;label_eulerAngles.Name" xml:space="preserve">
+    <value>label_eulerAngles</value>
+  </data>
+  <data name="&gt;&gt;label_eulerAngles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_eulerAngles.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label_eulerAngles.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label_q3_val.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_q3_val.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label_q3_val.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_q3_val.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 184</value>
+  </data>
+  <data name="label_q3_val.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 20</value>
+  </data>
+  <data name="label_q3_val.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="label_q3_val.Text" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="&gt;&gt;label_q3_val.Name" xml:space="preserve">
+    <value>label_q3_val</value>
+  </data>
+  <data name="&gt;&gt;label_q3_val.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_q3_val.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label_q3_val.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label_q2_val.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_q2_val.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label_q2_val.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_q2_val.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 164</value>
+  </data>
+  <data name="label_q2_val.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 20</value>
+  </data>
+  <data name="label_q2_val.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="label_q2_val.Text" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="&gt;&gt;label_q2_val.Name" xml:space="preserve">
+    <value>label_q2_val</value>
+  </data>
+  <data name="&gt;&gt;label_q2_val.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_q2_val.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label_q2_val.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label_q1_val.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_q1_val.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label_q1_val.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_q1_val.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 144</value>
+  </data>
+  <data name="label_q1_val.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 20</value>
+  </data>
+  <data name="label_q1_val.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="label_q1_val.Text" xml:space="preserve">
+    <value>0.00</value>
+  </data>
+  <data name="&gt;&gt;label_q1_val.Name" xml:space="preserve">
+    <value>label_q1_val</value>
+  </data>
+  <data name="&gt;&gt;label_q1_val.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_q1_val.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label_q1_val.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label_q0_val.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_q0_val.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label_q0_val.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_q0_val.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 124</value>
+  </data>
+  <data name="label_q0_val.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 20</value>
+  </data>
+  <data name="label_q0_val.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label_q0_val.Text" xml:space="preserve">
+    <value>1.00</value>
+  </data>
+  <data name="&gt;&gt;label_q0_val.Name" xml:space="preserve">
+    <value>label_q0_val</value>
+  </data>
+  <data name="&gt;&gt;label_q0_val.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_q0_val.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label_q0_val.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label_q2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_q2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label_q2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_q2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 164</value>
+  </data>
+  <data name="label_q2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 20</value>
+  </data>
+  <data name="label_q2.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="label_q2.Text" xml:space="preserve">
+    <value>q2:</value>
+  </data>
+  <data name="&gt;&gt;label_q2.Name" xml:space="preserve">
+    <value>label_q2</value>
+  </data>
+  <data name="&gt;&gt;label_q2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_q2.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label_q2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label_q3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_q3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label_q3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_q3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 184</value>
+  </data>
+  <data name="label_q3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 20</value>
+  </data>
+  <data name="label_q3.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="label_q3.Text" xml:space="preserve">
+    <value>q3:</value>
+  </data>
+  <data name="&gt;&gt;label_q3.Name" xml:space="preserve">
+    <value>label_q3</value>
+  </data>
+  <data name="&gt;&gt;label_q3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_q3.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label_q3.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label_q1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_q1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label_q1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_q1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 144</value>
+  </data>
+  <data name="label_q1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 20</value>
+  </data>
+  <data name="label_q1.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="label_q1.Text" xml:space="preserve">
+    <value>q1:</value>
+  </data>
+  <data name="&gt;&gt;label_q1.Name" xml:space="preserve">
+    <value>label_q1</value>
+  </data>
+  <data name="&gt;&gt;label_q1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_q1.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label_q1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label_q0.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_q0.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label_q0.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_q0.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 124</value>
+  </data>
+  <data name="label_q0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 20</value>
+  </data>
+  <data name="label_q0.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label_q0.Text" xml:space="preserve">
+    <value>q0:</value>
+  </data>
+  <data name="&gt;&gt;label_q0.Name" xml:space="preserve">
+    <value>label_q0</value>
+  </data>
+  <data name="&gt;&gt;label_q0.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_q0.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label_q0.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="label_quaternions.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_quaternions.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Underline</value>
+  </data>
+  <data name="label_quaternions.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_quaternions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 101</value>
+  </data>
+  <data name="label_quaternions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 20</value>
+  </data>
+  <data name="label_quaternions.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label_quaternions.Text" xml:space="preserve">
+    <value>Quarternions</value>
+  </data>
+  <data name="&gt;&gt;label_quaternions.Name" xml:space="preserve">
+    <value>label_quaternions</value>
+  </data>
+  <data name="&gt;&gt;label_quaternions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_quaternions.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label_quaternions.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="button_filterSelect.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="button_filterSelect.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_filterSelect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 33</value>
+  </data>
+  <data name="button_filterSelect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 28</value>
+  </data>
+  <data name="button_filterSelect.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="button_filterSelect.Text" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="&gt;&gt;button_filterSelect.Name" xml:space="preserve">
+    <value>button_filterSelect</value>
+  </data>
+  <data name="&gt;&gt;button_filterSelect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_filterSelect.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;button_filterSelect.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="comboBox_filterList.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="comboBox_filterList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 33</value>
+  </data>
+  <data name="comboBox_filterList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 28</value>
+  </data>
+  <data name="comboBox_filterList.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;comboBox_filterList.Name" xml:space="preserve">
+    <value>comboBox_filterList</value>
+  </data>
+  <data name="&gt;&gt;comboBox_filterList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_filterList.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;comboBox_filterList.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 12</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 837</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

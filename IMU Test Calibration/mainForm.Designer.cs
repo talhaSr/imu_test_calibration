@@ -56,9 +56,36 @@ namespace IMU_Test_Calibration
             this.label_my_val = new System.Windows.Forms.Label();
             this.label_mz_val = new System.Windows.Forms.Label();
             this.label_temp_val = new System.Windows.Forms.Label();
+            this.groupBox_com = new System.Windows.Forms.GroupBox();
+            this.comboBox_comPorts = new System.Windows.Forms.ComboBox();
+            this.label_comPort = new System.Windows.Forms.Label();
+            this.label_baudrate = new System.Windows.Forms.Label();
+            this.comboBox_baudrates = new System.Windows.Forms.ComboBox();
+            this.button_connect = new System.Windows.Forms.Button();
+            this.button_cancel = new System.Windows.Forms.Button();
+            this.label_status = new System.Windows.Forms.Label();
+            this.label_comStatus = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBox_filterList = new System.Windows.Forms.ComboBox();
+            this.button_filterSelect = new System.Windows.Forms.Button();
+            this.label_quaternions = new System.Windows.Forms.Label();
+            this.label_q0 = new System.Windows.Forms.Label();
+            this.label_q1 = new System.Windows.Forms.Label();
+            this.label_q3 = new System.Windows.Forms.Label();
+            this.label_q2 = new System.Windows.Forms.Label();
+            this.label_q0_val = new System.Windows.Forms.Label();
+            this.label_q1_val = new System.Windows.Forms.Label();
+            this.label_q2_val = new System.Windows.Forms.Label();
+            this.label_q3_val = new System.Windows.Forms.Label();
+            this.label_eulerAngles = new System.Windows.Forms.Label();
+            this.label_alpha = new System.Windows.Forms.Label();
+            this.label_beta = new System.Windows.Forms.Label();
+            this.label_gamma = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_logo_1)).BeginInit();
             this.groupBox_imuData.SuspendLayout();
+            this.groupBox_com.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // picBox_logo_1
@@ -220,17 +247,175 @@ namespace IMU_Test_Calibration
             resources.ApplyResources(this.label_temp_val, "label_temp_val");
             this.label_temp_val.Name = "label_temp_val";
             // 
+            // groupBox_com
+            // 
+            this.groupBox_com.Controls.Add(this.label_comStatus);
+            this.groupBox_com.Controls.Add(this.label_status);
+            this.groupBox_com.Controls.Add(this.button_cancel);
+            this.groupBox_com.Controls.Add(this.button_connect);
+            this.groupBox_com.Controls.Add(this.comboBox_baudrates);
+            this.groupBox_com.Controls.Add(this.label_baudrate);
+            this.groupBox_com.Controls.Add(this.comboBox_comPorts);
+            this.groupBox_com.Controls.Add(this.label_comPort);
+            resources.ApplyResources(this.groupBox_com, "groupBox_com");
+            this.groupBox_com.Name = "groupBox_com";
+            this.groupBox_com.TabStop = false;
+            // 
+            // comboBox_comPorts
+            // 
+            resources.ApplyResources(this.comboBox_comPorts, "comboBox_comPorts");
+            this.comboBox_comPorts.FormattingEnabled = true;
+            this.comboBox_comPorts.Name = "comboBox_comPorts";
+            // 
+            // label_comPort
+            // 
+            resources.ApplyResources(this.label_comPort, "label_comPort");
+            this.label_comPort.Name = "label_comPort";
+            // 
+            // label_baudrate
+            // 
+            resources.ApplyResources(this.label_baudrate, "label_baudrate");
+            this.label_baudrate.Name = "label_baudrate";
+            // 
+            // comboBox_baudrates
+            // 
+            resources.ApplyResources(this.comboBox_baudrates, "comboBox_baudrates");
+            this.comboBox_baudrates.FormattingEnabled = true;
+            this.comboBox_baudrates.Name = "comboBox_baudrates";
+            // 
+            // button_connect
+            // 
+            resources.ApplyResources(this.button_connect, "button_connect");
+            this.button_connect.Name = "button_connect";
+            this.button_connect.UseVisualStyleBackColor = true;
+            // 
+            // button_cancel
+            // 
+            resources.ApplyResources(this.button_cancel, "button_cancel");
+            this.button_cancel.Name = "button_cancel";
+            this.button_cancel.UseVisualStyleBackColor = true;
+            // 
+            // label_status
+            // 
+            resources.ApplyResources(this.label_status, "label_status");
+            this.label_status.Name = "label_status";
+            // 
+            // label_comStatus
+            // 
+            resources.ApplyResources(this.label_comStatus, "label_comStatus");
+            this.label_comStatus.Name = "label_comStatus";
+            // 
             // groupBox1
             // 
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label_gamma);
+            this.groupBox2.Controls.Add(this.label_beta);
+            this.groupBox2.Controls.Add(this.label_alpha);
+            this.groupBox2.Controls.Add(this.label_eulerAngles);
+            this.groupBox2.Controls.Add(this.label_q3_val);
+            this.groupBox2.Controls.Add(this.label_q2_val);
+            this.groupBox2.Controls.Add(this.label_q1_val);
+            this.groupBox2.Controls.Add(this.label_q0_val);
+            this.groupBox2.Controls.Add(this.label_q2);
+            this.groupBox2.Controls.Add(this.label_q3);
+            this.groupBox2.Controls.Add(this.label_q1);
+            this.groupBox2.Controls.Add(this.label_q0);
+            this.groupBox2.Controls.Add(this.label_quaternions);
+            this.groupBox2.Controls.Add(this.button_filterSelect);
+            this.groupBox2.Controls.Add(this.comboBox_filterList);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.TabStop = false;
+            // 
+            // comboBox_filterList
+            // 
+            resources.ApplyResources(this.comboBox_filterList, "comboBox_filterList");
+            this.comboBox_filterList.FormattingEnabled = true;
+            this.comboBox_filterList.Name = "comboBox_filterList";
+            // 
+            // button_filterSelect
+            // 
+            resources.ApplyResources(this.button_filterSelect, "button_filterSelect");
+            this.button_filterSelect.Name = "button_filterSelect";
+            this.button_filterSelect.UseVisualStyleBackColor = true;
+            // 
+            // label_quaternions
+            // 
+            resources.ApplyResources(this.label_quaternions, "label_quaternions");
+            this.label_quaternions.Name = "label_quaternions";
+            // 
+            // label_q0
+            // 
+            resources.ApplyResources(this.label_q0, "label_q0");
+            this.label_q0.Name = "label_q0";
+            // 
+            // label_q1
+            // 
+            resources.ApplyResources(this.label_q1, "label_q1");
+            this.label_q1.Name = "label_q1";
+            // 
+            // label_q3
+            // 
+            resources.ApplyResources(this.label_q3, "label_q3");
+            this.label_q3.Name = "label_q3";
+            // 
+            // label_q2
+            // 
+            resources.ApplyResources(this.label_q2, "label_q2");
+            this.label_q2.Name = "label_q2";
+            // 
+            // label_q0_val
+            // 
+            resources.ApplyResources(this.label_q0_val, "label_q0_val");
+            this.label_q0_val.Name = "label_q0_val";
+            // 
+            // label_q1_val
+            // 
+            resources.ApplyResources(this.label_q1_val, "label_q1_val");
+            this.label_q1_val.Name = "label_q1_val";
+            // 
+            // label_q2_val
+            // 
+            resources.ApplyResources(this.label_q2_val, "label_q2_val");
+            this.label_q2_val.Name = "label_q2_val";
+            // 
+            // label_q3_val
+            // 
+            resources.ApplyResources(this.label_q3_val, "label_q3_val");
+            this.label_q3_val.Name = "label_q3_val";
+            // 
+            // label_eulerAngles
+            // 
+            resources.ApplyResources(this.label_eulerAngles, "label_eulerAngles");
+            this.label_eulerAngles.Name = "label_eulerAngles";
+            // 
+            // label_alpha
+            // 
+            resources.ApplyResources(this.label_alpha, "label_alpha");
+            this.label_alpha.Name = "label_alpha";
+            // 
+            // label_beta
+            // 
+            resources.ApplyResources(this.label_beta, "label_beta");
+            this.label_beta.Name = "label_beta";
+            // 
+            // label_gamma
+            // 
+            resources.ApplyResources(this.label_gamma, "label_gamma");
+            this.label_gamma.Name = "label_gamma";
+            // 
             // f_main
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox_com);
             this.Controls.Add(this.groupBox_imuData);
             this.Controls.Add(this.picBox_logo_1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -239,6 +424,10 @@ namespace IMU_Test_Calibration
             ((System.ComponentModel.ISupportInitialize)(this.picBox_logo_1)).EndInit();
             this.groupBox_imuData.ResumeLayout(false);
             this.groupBox_imuData.PerformLayout();
+            this.groupBox_com.ResumeLayout(false);
+            this.groupBox_com.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -271,7 +460,32 @@ namespace IMU_Test_Calibration
         private System.Windows.Forms.Label label_gz_val;
         private System.Windows.Forms.Label label_gy_val;
         private System.Windows.Forms.Label label_gx_val;
+        private System.Windows.Forms.GroupBox groupBox_com;
+        private System.Windows.Forms.ComboBox comboBox_comPorts;
+        private System.Windows.Forms.Label label_comPort;
+        private System.Windows.Forms.ComboBox comboBox_baudrates;
+        private System.Windows.Forms.Label label_baudrate;
+        private System.Windows.Forms.Button button_connect;
+        private System.Windows.Forms.Button button_cancel;
+        private System.Windows.Forms.Label label_comStatus;
+        private System.Windows.Forms.Label label_status;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button_filterSelect;
+        private System.Windows.Forms.ComboBox comboBox_filterList;
+        private System.Windows.Forms.Label label_quaternions;
+        private System.Windows.Forms.Label label_q2;
+        private System.Windows.Forms.Label label_q3;
+        private System.Windows.Forms.Label label_q1;
+        private System.Windows.Forms.Label label_q0;
+        private System.Windows.Forms.Label label_q3_val;
+        private System.Windows.Forms.Label label_q2_val;
+        private System.Windows.Forms.Label label_q1_val;
+        private System.Windows.Forms.Label label_q0_val;
+        private System.Windows.Forms.Label label_gamma;
+        private System.Windows.Forms.Label label_beta;
+        private System.Windows.Forms.Label label_alpha;
+        private System.Windows.Forms.Label label_eulerAngles;
     }
 }
 
