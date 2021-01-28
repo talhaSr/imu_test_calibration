@@ -82,6 +82,9 @@ namespace IMU_Test_Calibration
             this.label_alpha = new System.Windows.Forms.Label();
             this.label_beta = new System.Windows.Forms.Label();
             this.label_gamma = new System.Windows.Forms.Label();
+            this.label_beta_val = new System.Windows.Forms.Label();
+            this.label_alpha_val = new System.Windows.Forms.Label();
+            this.label_gamma_val = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_logo_1)).BeginInit();
             this.groupBox_imuData.SuspendLayout();
             this.groupBox_com.SuspendLayout();
@@ -313,6 +316,9 @@ namespace IMU_Test_Calibration
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label_gamma_val);
+            this.groupBox2.Controls.Add(this.label_alpha_val);
+            this.groupBox2.Controls.Add(this.label_beta_val);
             this.groupBox2.Controls.Add(this.label_gamma);
             this.groupBox2.Controls.Add(this.label_beta);
             this.groupBox2.Controls.Add(this.label_alpha);
@@ -409,6 +415,21 @@ namespace IMU_Test_Calibration
             resources.ApplyResources(this.label_gamma, "label_gamma");
             this.label_gamma.Name = "label_gamma";
             // 
+            // label_beta_val
+            // 
+            resources.ApplyResources(this.label_beta_val, "label_beta_val");
+            this.label_beta_val.Name = "label_beta_val";
+            // 
+            // label_alpha_val
+            // 
+            resources.ApplyResources(this.label_alpha_val, "label_alpha_val");
+            this.label_alpha_val.Name = "label_alpha_val";
+            // 
+            // label_gamma_val
+            // 
+            resources.ApplyResources(this.label_gamma_val, "label_gamma_val");
+            this.label_gamma_val.Name = "label_gamma_val";
+            // 
             // f_main
             // 
             resources.ApplyResources(this, "$this");
@@ -486,6 +507,9 @@ namespace IMU_Test_Calibration
         private System.Windows.Forms.Label label_beta;
         private System.Windows.Forms.Label label_alpha;
         private System.Windows.Forms.Label label_eulerAngles;
+        private System.Windows.Forms.Label label_gamma_val;
+        private System.Windows.Forms.Label label_alpha_val;
+        private System.Windows.Forms.Label label_beta_val;
     }
 }
 
