@@ -13,7 +13,9 @@ namespace IMU_Test_Calibration
 {
     public partial class f_main : Form
     {
-        public string buffer;
+        public string buffer_acc;
+        public string buffer_gyro;
+        public string buffer_mag;
         public string[] acc = new string[3];
         public string[] gyro = new string[3];
         public string[] mag = new string[3];
@@ -94,7 +96,9 @@ namespace IMU_Test_Calibration
 
         public void serial_veri(object sender, SerialDataReceivedEventArgs args)
         {
-            buffer = serialPort.ReadLine().ToString();
+            buffer_acc = serialPort.ReadLine().ToString();
+            buffer_gyro = serialPort.ReadLine().ToString();
+            buffer_mag = serialPort.ReadLine().ToString();
 
             /* Split İşlemi Başlangıç */
 
