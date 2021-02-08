@@ -101,7 +101,9 @@ namespace IMU_Test_Calibration
             buffer_mag = serialPort.ReadLine().ToString();
 
             /* Split İşlemi Başlangıç */
-
+            acc = Utils.SplitString('#', buffer_acc);
+            gyro = Utils.SplitString('#', buffer_gyro);
+            mag = Utils.SplitString('#', buffer_mag);
 
             /* Split İşlemi Bitiş */
 
