@@ -13,6 +13,7 @@ namespace IMU_Test_Calibration
 {
     public partial class f_main : Form
     {
+        public string buffer;
         public string[] acc = new string[3];
         public string[] gyro = new string[3];
         public string[] mag = new string[3];
@@ -93,7 +94,25 @@ namespace IMU_Test_Calibration
 
         public void serial_veri(object sender, SerialDataReceivedEventArgs args)
         {
+            buffer = serialPort.ReadLine().ToString();
 
+            /* Split İşlemi Başlangıç */
+
+
+            /* Split İşlemi Bitiş */
+
+            /* IMU Data Label Update */
+            label_ax_val.Invoke(new MethodInvoker(delegate { label_ax_val.Text = acc[0].ToString(); }));
+            label_ay_val.Invoke(new MethodInvoker(delegate { label_ay_val.Text = acc[1].ToString(); }));
+            label_az_val.Invoke(new MethodInvoker(delegate { label_az_val.Text = acc[2].ToString(); }));
+
+            label_gx_val.Invoke(new MethodInvoker(delegate { label_gx_val.Text = gyro[0].ToString(); }));
+            label_gy_val.Invoke(new MethodInvoker(delegate { label_gy_val.Text = gyro[1].ToString(); }));
+            label_gz_val.Invoke(new MethodInvoker(delegate { label_gz_val.Text = gyro[2].ToString(); }));
+
+            label_mx_val.Invoke(new MethodInvoker(delegate { label_mx_val.Text = mag[0].ToString(); }));
+            label_my_val.Invoke(new MethodInvoker(delegate { label_my_val.Text = mag[1].ToString(); }));
+            label_mz_val.Invoke(new MethodInvoker(delegate { label_mz_val.Text = mag[2].ToString(); }));
         }
 
         private void button_cancel_Click(object sender, EventArgs e)
