@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace IMU_Test_Calibration
 {
@@ -10,7 +6,7 @@ namespace IMU_Test_Calibration
     {
         public static String[] SplitString(char delimeter, String bufferStr)
         {
-            String[] tempStirng = bufferStr.Split('#');
+            String[] tempStirng = bufferStr.Split(delimeter);
             return tempStirng;
         }
     }

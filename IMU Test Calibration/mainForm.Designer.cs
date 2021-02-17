@@ -31,6 +31,12 @@ namespace IMU_Test_Calibration
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f_main));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.picBox_logo_1 = new System.Windows.Forms.PictureBox();
             this.groupBox_imuData = new System.Windows.Forms.GroupBox();
             this.label_temp_val = new System.Windows.Forms.Label();
@@ -66,8 +72,8 @@ namespace IMU_Test_Calibration
             this.label_baudrate = new System.Windows.Forms.Label();
             this.comboBox_comPorts = new System.Windows.Forms.ComboBox();
             this.label_comPort = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox_calibration = new System.Windows.Forms.GroupBox();
+            this.groupBox_filter = new System.Windows.Forms.GroupBox();
             this.label_gamma_val = new System.Windows.Forms.Label();
             this.label_alpha_val = new System.Windows.Forms.Label();
             this.label_beta_val = new System.Windows.Forms.Label();
@@ -88,10 +94,16 @@ namespace IMU_Test_Calibration
             this.comboBox_filterList = new System.Windows.Forms.ComboBox();
             this.serialPort = new System.IO.Ports.SerialPort(this.components);
             this.textBox_log = new System.Windows.Forms.TextBox();
+            this.groupBox_graph = new System.Windows.Forms.GroupBox();
+            this.chart_2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart_1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_logo_1)).BeginInit();
             this.groupBox_imuData.SuspendLayout();
             this.groupBox_com.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.groupBox_filter.SuspendLayout();
+            this.groupBox_graph.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_1)).BeginInit();
             this.SuspendLayout();
             // 
             // picBox_logo_1
@@ -322,35 +334,35 @@ namespace IMU_Test_Calibration
             resources.ApplyResources(this.label_comPort, "label_comPort");
             this.label_comPort.Name = "label_comPort";
             // 
-            // groupBox1
+            // groupBox_calibration
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
+            resources.ApplyResources(this.groupBox_calibration, "groupBox_calibration");
+            this.groupBox_calibration.Name = "groupBox_calibration";
+            this.groupBox_calibration.TabStop = false;
             // 
-            // groupBox2
+            // groupBox_filter
             // 
-            this.groupBox2.Controls.Add(this.label_gamma_val);
-            this.groupBox2.Controls.Add(this.label_alpha_val);
-            this.groupBox2.Controls.Add(this.label_beta_val);
-            this.groupBox2.Controls.Add(this.label_gamma);
-            this.groupBox2.Controls.Add(this.label_beta);
-            this.groupBox2.Controls.Add(this.label_alpha);
-            this.groupBox2.Controls.Add(this.label_eulerAngles);
-            this.groupBox2.Controls.Add(this.label_q3_val);
-            this.groupBox2.Controls.Add(this.label_q2_val);
-            this.groupBox2.Controls.Add(this.label_q1_val);
-            this.groupBox2.Controls.Add(this.label_q0_val);
-            this.groupBox2.Controls.Add(this.label_q2);
-            this.groupBox2.Controls.Add(this.label_q3);
-            this.groupBox2.Controls.Add(this.label_q1);
-            this.groupBox2.Controls.Add(this.label_q0);
-            this.groupBox2.Controls.Add(this.label_quaternions);
-            this.groupBox2.Controls.Add(this.button_filterSelect);
-            this.groupBox2.Controls.Add(this.comboBox_filterList);
-            resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.TabStop = false;
+            this.groupBox_filter.Controls.Add(this.label_gamma_val);
+            this.groupBox_filter.Controls.Add(this.label_alpha_val);
+            this.groupBox_filter.Controls.Add(this.label_beta_val);
+            this.groupBox_filter.Controls.Add(this.label_gamma);
+            this.groupBox_filter.Controls.Add(this.label_beta);
+            this.groupBox_filter.Controls.Add(this.label_alpha);
+            this.groupBox_filter.Controls.Add(this.label_eulerAngles);
+            this.groupBox_filter.Controls.Add(this.label_q3_val);
+            this.groupBox_filter.Controls.Add(this.label_q2_val);
+            this.groupBox_filter.Controls.Add(this.label_q1_val);
+            this.groupBox_filter.Controls.Add(this.label_q0_val);
+            this.groupBox_filter.Controls.Add(this.label_q2);
+            this.groupBox_filter.Controls.Add(this.label_q3);
+            this.groupBox_filter.Controls.Add(this.label_q1);
+            this.groupBox_filter.Controls.Add(this.label_q0);
+            this.groupBox_filter.Controls.Add(this.label_quaternions);
+            this.groupBox_filter.Controls.Add(this.button_filterSelect);
+            this.groupBox_filter.Controls.Add(this.comboBox_filterList);
+            resources.ApplyResources(this.groupBox_filter, "groupBox_filter");
+            this.groupBox_filter.Name = "groupBox_filter";
+            this.groupBox_filter.TabStop = false;
             // 
             // label_gamma_val
             // 
@@ -444,19 +456,67 @@ namespace IMU_Test_Calibration
             this.comboBox_filterList.FormattingEnabled = true;
             this.comboBox_filterList.Name = "comboBox_filterList";
             // 
+            // serialPort
+            // 
+            this.serialPort.BaudRate = 115200;
+            this.serialPort.PortName = "COM7";
+            // 
             // textBox_log
             // 
             resources.ApplyResources(this.textBox_log, "textBox_log");
             this.textBox_log.Name = "textBox_log";
             this.textBox_log.TextChanged += new System.EventHandler(this.textBox_log_TextChanged);
             // 
+            // groupBox_graph
+            // 
+            this.groupBox_graph.Controls.Add(this.chart_2);
+            this.groupBox_graph.Controls.Add(this.chart_1);
+            resources.ApplyResources(this.groupBox_graph, "groupBox_graph");
+            this.groupBox_graph.Name = "groupBox_graph";
+            this.groupBox_graph.TabStop = false;
+            // 
+            // chart_2
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart_2.ChartAreas.Add(chartArea1);
+            this.chart_2.Cursor = System.Windows.Forms.Cursors.Cross;
+            legend1.Name = "Legend1";
+            this.chart_2.Legends.Add(legend1);
+            resources.ApplyResources(this.chart_2, "chart_2");
+            this.chart_2.Name = "chart_2";
+            this.chart_2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            series1.YValuesPerPoint = 4;
+            this.chart_2.Series.Add(series1);
+            // 
+            // chart_1
+            // 
+            chartArea2.Name = "ChartArea1";
+            this.chart_1.ChartAreas.Add(chartArea2);
+            this.chart_1.Cursor = System.Windows.Forms.Cursors.Cross;
+            legend2.Name = "Legend1";
+            this.chart_1.Legends.Add(legend2);
+            resources.ApplyResources(this.chart_1, "chart_1");
+            this.chart_1.Name = "chart_1";
+            this.chart_1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            series2.YValuesPerPoint = 4;
+            this.chart_1.Series.Add(series2);
+            // 
             // f_main
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.groupBox_graph);
             this.Controls.Add(this.textBox_log);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox_filter);
+            this.Controls.Add(this.groupBox_calibration);
             this.Controls.Add(this.groupBox_com);
             this.Controls.Add(this.groupBox_imuData);
             this.Controls.Add(this.picBox_logo_1);
@@ -468,8 +528,11 @@ namespace IMU_Test_Calibration
             this.groupBox_imuData.PerformLayout();
             this.groupBox_com.ResumeLayout(false);
             this.groupBox_com.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.groupBox_filter.ResumeLayout(false);
+            this.groupBox_filter.PerformLayout();
+            this.groupBox_graph.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -512,8 +575,8 @@ namespace IMU_Test_Calibration
         private System.Windows.Forms.Button button_cancel;
         private System.Windows.Forms.Label label_comStatus;
         private System.Windows.Forms.Label label_status;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox_calibration;
+        private System.Windows.Forms.GroupBox groupBox_filter;
         private System.Windows.Forms.Button button_filterSelect;
         private System.Windows.Forms.ComboBox comboBox_filterList;
         private System.Windows.Forms.Label label_quaternions;
@@ -534,6 +597,9 @@ namespace IMU_Test_Calibration
         private System.Windows.Forms.Label label_beta_val;
         private System.IO.Ports.SerialPort serialPort;
         private System.Windows.Forms.TextBox textBox_log;
+        private System.Windows.Forms.GroupBox groupBox_graph;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart_2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart_1;
     }
 }
 
