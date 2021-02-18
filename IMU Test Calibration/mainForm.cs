@@ -13,13 +13,13 @@ namespace IMU_Test_Calibration
 {
     public partial class f_main : Form
     {
-        public string buffer_accel, buffer_gyro, buffer_mag, buffer_temp;
+        public string buffer;
         public string[] data = new string[10];
         public string[] acc = new string[3];
         public string[] gyro = new string[3];
         public string[] mag = new string[3];
         public string temp;
-        public string[] comStatus = { "Not Connected", "Connected" };
+        public string[] comStatus = { "Disconnected", "Connected" };
         public f_main()
         {
             InitializeComponent();
@@ -33,7 +33,8 @@ namespace IMU_Test_Calibration
 
         private void comboBox_baudrates_SelectedIndexChanged(object sender, EventArgs e)
         {
-            serialPort.BaudRate = Convert.ToInt32(comboBox_baudrates.SelectedItem);
+            //serialPort.BaudRate = Convert.ToInt32(comboBox_baudrates.SelectedItem);
+            serialPort.BaudRate = int.Parse(comboBox_baudrates.SelectedItem.ToString());
         }
 
         private void textBox_log_TextChanged(object sender, EventArgs e)
@@ -49,8 +50,6 @@ namespace IMU_Test_Calibration
 
         private void button_connect_Click(object sender, EventArgs e)
         {
-            serialPort.PortName = comboBox_comPorts.SelectedItem.ToString();
-            serialPort.BaudRate = Convert.ToInt32(comboBox_baudrates.SelectedItem);
             try
             {
                 serialPort.Open();
@@ -97,37 +96,36 @@ namespace IMU_Test_Calibration
 
         public void serial_veri(object sender, SerialDataReceivedEventArgs args)
         {
-            buffer_accel = serialPort.ReadLine().ToString();
-            buffer_gyro = serialPort.ReadLine().ToString();
-            buffer_mag = serialPort.ReadLine().ToString();
+            buffer = serialPort.ReadLine().ToString();
 
             /* Split İşlemi Başlangıç */
-            acc = Utils.SplitString(',', buffer_accel);
-            gyro = Utils.SplitString(',', buffer_gyro);
-            mag = Utils.SplitString(',', buffer_mag);
+            data = Utils.SplitString(',', buffer);
             /* Split İşlemi Bitiş */
 
             /* IMU Data Label Update */
-            label_ax_val.Invoke(new MethodInvoker(delegate { label_ax_val.Text = acc[0]; }));
-            label_ay_val.Invoke(new MethodInvoker(delegate { label_ay_val.Text = acc[1]; }));
-            label_az_val.Invoke(new MethodInvoker(delegate { label_az_val.Text = acc[2]; }));
+            label_ax_val.Invoke(new MethodInvoker(delegate { label_ax_val.Text = data[0]; }));
+            label_ay_val.Invoke(new MethodInvoker(delegate { label_ay_val.Text = data[1]; }));
+            label_az_val.Invoke(new MethodInvoker(delegate { label_az_val.Text = data[2]; }));
             
-            label_gx_val.Invoke(new MethodInvoker(delegate { label_gx_val.Text = gyro[0]; }));
-            label_gy_val.Invoke(new MethodInvoker(delegate { label_gy_val.Text = gyro[1]; }));
-            label_gz_val.Invoke(new MethodInvoker(delegate { label_gz_val.Text = gyro[2]; }));
+            label_gx_val.Invoke(new MethodInvoker(delegate { label_gx_val.Text = data[3]; }));
+            label_gy_val.Invoke(new MethodInvoker(delegate { label_gy_val.Text = data[4]; }));
+            label_gz_val.Invoke(new MethodInvoker(delegate { label_gz_val.Text = data[5]; }));
 
-            label_mx_val.Invoke(new MethodInvoker(delegate { label_mx_val.Text = mag[0]; }));
-            label_my_val.Invoke(new MethodInvoker(delegate { label_my_val.Text = mag[1]; }));
-            label_mz_val.Invoke(new MethodInvoker(delegate { label_mz_val.Text = mag[2]; }));
-            /*
+            label_mx_val.Invoke(new MethodInvoker(delegate { label_mx_val.Text = data[6]; }));
+            label_my_val.Invoke(new MethodInvoker(delegate { label_my_val.Text = data[7]; }));
+            label_mz_val.Invoke(new MethodInvoker(delegate { label_mz_val.Text = data[8]; }));
+            
             label_temp_val.Invoke(new MethodInvoker(delegate { label_temp_val.Text = data[9]; }));
-            */
+            
         }
 
         private void button_cancel_Click(object sender, EventArgs e)
         {
-            serialPort.Close();
-            comboBox_comPorts.Items.AddRange(SerialPort.GetPortNames());
+            if (serialPort.IsOpen)
+            {
+                serialPort.DiscardInBuffer();
+                serialPort.Close();
+            }
             label_comStatus.Invoke(new MethodInvoker(delegate { label_comStatus.Text = comStatus[0]; label_comStatus.ForeColor = System.Drawing.Color.Red; }));
             textBox_log.Text = "Port: " + serialPort.PortName.ToString() + Environment.NewLine + "Baudrate: " + serialPort.BaudRate.ToString();
         }

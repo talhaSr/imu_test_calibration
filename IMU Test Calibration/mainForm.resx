@@ -144,6 +144,321 @@
   <data name="&gt;&gt;picBox_logo_1.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="&gt;&gt;label_temp_val.Name" xml:space="preserve">
+    <value>label_temp_val</value>
+  </data>
+  <data name="&gt;&gt;label_temp_val.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_temp_val.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_temp_val.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_mz_val.Name" xml:space="preserve">
+    <value>label_mz_val</value>
+  </data>
+  <data name="&gt;&gt;label_mz_val.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_mz_val.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_mz_val.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label_my_val.Name" xml:space="preserve">
+    <value>label_my_val</value>
+  </data>
+  <data name="&gt;&gt;label_my_val.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_my_val.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_my_val.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label_mx_val.Name" xml:space="preserve">
+    <value>label_mx_val</value>
+  </data>
+  <data name="&gt;&gt;label_mx_val.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_mx_val.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_mx_val.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label_gz_val.Name" xml:space="preserve">
+    <value>label_gz_val</value>
+  </data>
+  <data name="&gt;&gt;label_gz_val.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_gz_val.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_gz_val.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label_gy_val.Name" xml:space="preserve">
+    <value>label_gy_val</value>
+  </data>
+  <data name="&gt;&gt;label_gy_val.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_gy_val.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_gy_val.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label_gx_val.Name" xml:space="preserve">
+    <value>label_gx_val</value>
+  </data>
+  <data name="&gt;&gt;label_gx_val.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_gx_val.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_gx_val.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label_az_val.Name" xml:space="preserve">
+    <value>label_az_val</value>
+  </data>
+  <data name="&gt;&gt;label_az_val.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_az_val.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_az_val.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label_ay_val.Name" xml:space="preserve">
+    <value>label_ay_val</value>
+  </data>
+  <data name="&gt;&gt;label_ay_val.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_ay_val.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_ay_val.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label_ax_val.Name" xml:space="preserve">
+    <value>label_ax_val</value>
+  </data>
+  <data name="&gt;&gt;label_ax_val.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_ax_val.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_ax_val.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label_temp.Name" xml:space="preserve">
+    <value>label_temp</value>
+  </data>
+  <data name="&gt;&gt;label_temp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_temp.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_temp.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label_Temparature.Name" xml:space="preserve">
+    <value>label_Temparature</value>
+  </data>
+  <data name="&gt;&gt;label_Temparature.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Temparature.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_Temparature.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;label_mz.Name" xml:space="preserve">
+    <value>label_mz</value>
+  </data>
+  <data name="&gt;&gt;label_mz.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_mz.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_mz.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;label_my.Name" xml:space="preserve">
+    <value>label_my</value>
+  </data>
+  <data name="&gt;&gt;label_my.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_my.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_my.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;label_mx.Name" xml:space="preserve">
+    <value>label_mx</value>
+  </data>
+  <data name="&gt;&gt;label_mx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_mx.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_mx.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;label_Magnetometer.Name" xml:space="preserve">
+    <value>label_Magnetometer</value>
+  </data>
+  <data name="&gt;&gt;label_Magnetometer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Magnetometer.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_Magnetometer.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;label_gz.Name" xml:space="preserve">
+    <value>label_gz</value>
+  </data>
+  <data name="&gt;&gt;label_gz.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_gz.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_gz.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;label_gy.Name" xml:space="preserve">
+    <value>label_gy</value>
+  </data>
+  <data name="&gt;&gt;label_gy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_gy.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_gy.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;label_gx.Name" xml:space="preserve">
+    <value>label_gx</value>
+  </data>
+  <data name="&gt;&gt;label_gx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_gx.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_gx.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;label_Gyroscope.Name" xml:space="preserve">
+    <value>label_Gyroscope</value>
+  </data>
+  <data name="&gt;&gt;label_Gyroscope.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Gyroscope.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_Gyroscope.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;label_az.Name" xml:space="preserve">
+    <value>label_az</value>
+  </data>
+  <data name="&gt;&gt;label_az.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_az.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_az.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;label_ay.Name" xml:space="preserve">
+    <value>label_ay</value>
+  </data>
+  <data name="&gt;&gt;label_ay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_ay.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_ay.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;label_ax.Name" xml:space="preserve">
+    <value>label_ax</value>
+  </data>
+  <data name="&gt;&gt;label_ax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_ax.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_ax.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;label_Accelerometer.Name" xml:space="preserve">
+    <value>label_Accelerometer</value>
+  </data>
+  <data name="&gt;&gt;label_Accelerometer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Accelerometer.Parent" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;label_Accelerometer.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="groupBox_imuData.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
+  </data>
+  <data name="groupBox_imuData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 205</value>
+  </data>
+  <data name="groupBox_imuData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 414</value>
+  </data>
+  <data name="groupBox_imuData.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBox_imuData.Text" xml:space="preserve">
+    <value>IMU Data</value>
+  </data>
+  <data name="&gt;&gt;groupBox_imuData.Name" xml:space="preserve">
+    <value>groupBox_imuData</value>
+  </data>
+  <data name="&gt;&gt;groupBox_imuData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_imuData.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox_imuData.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="label_temp_val.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -933,32 +1248,128 @@
   <data name="&gt;&gt;label_Accelerometer.ZOrder" xml:space="preserve">
     <value>23</value>
   </data>
-  <data name="groupBox_imuData.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
+  <data name="&gt;&gt;label_comStatus.Name" xml:space="preserve">
+    <value>label_comStatus</value>
   </data>
-  <data name="groupBox_imuData.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 205</value>
+  <data name="&gt;&gt;label_comStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="groupBox_imuData.Size" type="System.Drawing.Size, System.Drawing">
-    <value>312, 414</value>
+  <data name="&gt;&gt;label_comStatus.Parent" xml:space="preserve">
+    <value>groupBox_com</value>
   </data>
-  <data name="groupBox_imuData.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;label_comStatus.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_status.Name" xml:space="preserve">
+    <value>label_status</value>
+  </data>
+  <data name="&gt;&gt;label_status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_status.Parent" xml:space="preserve">
+    <value>groupBox_com</value>
+  </data>
+  <data name="&gt;&gt;label_status.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="groupBox_imuData.Text" xml:space="preserve">
-    <value>IMU Data</value>
+  <data name="&gt;&gt;button_cancel.Name" xml:space="preserve">
+    <value>button_cancel</value>
   </data>
-  <data name="&gt;&gt;groupBox_imuData.Name" xml:space="preserve">
-    <value>groupBox_imuData</value>
+  <data name="&gt;&gt;button_cancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBox_imuData.Type" xml:space="preserve">
+  <data name="&gt;&gt;button_cancel.Parent" xml:space="preserve">
+    <value>groupBox_com</value>
+  </data>
+  <data name="&gt;&gt;button_cancel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;button_connect.Name" xml:space="preserve">
+    <value>button_connect</value>
+  </data>
+  <data name="&gt;&gt;button_connect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_connect.Parent" xml:space="preserve">
+    <value>groupBox_com</value>
+  </data>
+  <data name="&gt;&gt;button_connect.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;comboBox_baudrates.Name" xml:space="preserve">
+    <value>comboBox_baudrates</value>
+  </data>
+  <data name="&gt;&gt;comboBox_baudrates.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_baudrates.Parent" xml:space="preserve">
+    <value>groupBox_com</value>
+  </data>
+  <data name="&gt;&gt;comboBox_baudrates.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label_baudrate.Name" xml:space="preserve">
+    <value>label_baudrate</value>
+  </data>
+  <data name="&gt;&gt;label_baudrate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_baudrate.Parent" xml:space="preserve">
+    <value>groupBox_com</value>
+  </data>
+  <data name="&gt;&gt;label_baudrate.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;comboBox_comPorts.Name" xml:space="preserve">
+    <value>comboBox_comPorts</value>
+  </data>
+  <data name="&gt;&gt;comboBox_comPorts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_comPorts.Parent" xml:space="preserve">
+    <value>groupBox_com</value>
+  </data>
+  <data name="&gt;&gt;comboBox_comPorts.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label_comPort.Name" xml:space="preserve">
+    <value>label_comPort</value>
+  </data>
+  <data name="&gt;&gt;label_comPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_comPort.Parent" xml:space="preserve">
+    <value>groupBox_com</value>
+  </data>
+  <data name="&gt;&gt;label_comPort.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="groupBox_com.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
+  </data>
+  <data name="groupBox_com.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="groupBox_com.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 187</value>
+  </data>
+  <data name="groupBox_com.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="groupBox_com.Text" xml:space="preserve">
+    <value>COM</value>
+  </data>
+  <data name="&gt;&gt;groupBox_com.Name" xml:space="preserve">
+    <value>groupBox_com</value>
+  </data>
+  <data name="&gt;&gt;groupBox_com.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBox_imuData.Parent" xml:space="preserve">
+  <data name="&gt;&gt;groupBox_com.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;groupBox_imuData.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;groupBox_com.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="label_comStatus.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1212,33 +1623,6 @@
   <data name="&gt;&gt;label_comPort.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="groupBox_com.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
-  </data>
-  <data name="groupBox_com.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="groupBox_com.Size" type="System.Drawing.Size, System.Drawing">
-    <value>312, 187</value>
-  </data>
-  <data name="groupBox_com.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="groupBox_com.Text" xml:space="preserve">
-    <value>COM</value>
-  </data>
-  <data name="&gt;&gt;groupBox_com.Name" xml:space="preserve">
-    <value>groupBox_com</value>
-  </data>
-  <data name="&gt;&gt;groupBox_com.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox_com.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox_com.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="groupBox_calibration.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
   </data>
@@ -1265,6 +1649,249 @@
   </data>
   <data name="&gt;&gt;groupBox_calibration.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="&gt;&gt;label_gamma_val.Name" xml:space="preserve">
+    <value>label_gamma_val</value>
+  </data>
+  <data name="&gt;&gt;label_gamma_val.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_gamma_val.Parent" xml:space="preserve">
+    <value>groupBox_filter</value>
+  </data>
+  <data name="&gt;&gt;label_gamma_val.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_alpha_val.Name" xml:space="preserve">
+    <value>label_alpha_val</value>
+  </data>
+  <data name="&gt;&gt;label_alpha_val.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_alpha_val.Parent" xml:space="preserve">
+    <value>groupBox_filter</value>
+  </data>
+  <data name="&gt;&gt;label_alpha_val.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label_beta_val.Name" xml:space="preserve">
+    <value>label_beta_val</value>
+  </data>
+  <data name="&gt;&gt;label_beta_val.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_beta_val.Parent" xml:space="preserve">
+    <value>groupBox_filter</value>
+  </data>
+  <data name="&gt;&gt;label_beta_val.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label_gamma.Name" xml:space="preserve">
+    <value>label_gamma</value>
+  </data>
+  <data name="&gt;&gt;label_gamma.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_gamma.Parent" xml:space="preserve">
+    <value>groupBox_filter</value>
+  </data>
+  <data name="&gt;&gt;label_gamma.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label_beta.Name" xml:space="preserve">
+    <value>label_beta</value>
+  </data>
+  <data name="&gt;&gt;label_beta.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_beta.Parent" xml:space="preserve">
+    <value>groupBox_filter</value>
+  </data>
+  <data name="&gt;&gt;label_beta.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label_alpha.Name" xml:space="preserve">
+    <value>label_alpha</value>
+  </data>
+  <data name="&gt;&gt;label_alpha.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_alpha.Parent" xml:space="preserve">
+    <value>groupBox_filter</value>
+  </data>
+  <data name="&gt;&gt;label_alpha.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label_eulerAngles.Name" xml:space="preserve">
+    <value>label_eulerAngles</value>
+  </data>
+  <data name="&gt;&gt;label_eulerAngles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_eulerAngles.Parent" xml:space="preserve">
+    <value>groupBox_filter</value>
+  </data>
+  <data name="&gt;&gt;label_eulerAngles.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label_q3_val.Name" xml:space="preserve">
+    <value>label_q3_val</value>
+  </data>
+  <data name="&gt;&gt;label_q3_val.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_q3_val.Parent" xml:space="preserve">
+    <value>groupBox_filter</value>
+  </data>
+  <data name="&gt;&gt;label_q3_val.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label_q2_val.Name" xml:space="preserve">
+    <value>label_q2_val</value>
+  </data>
+  <data name="&gt;&gt;label_q2_val.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_q2_val.Parent" xml:space="preserve">
+    <value>groupBox_filter</value>
+  </data>
+  <data name="&gt;&gt;label_q2_val.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label_q1_val.Name" xml:space="preserve">
+    <value>label_q1_val</value>
+  </data>
+  <data name="&gt;&gt;label_q1_val.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_q1_val.Parent" xml:space="preserve">
+    <value>groupBox_filter</value>
+  </data>
+  <data name="&gt;&gt;label_q1_val.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label_q0_val.Name" xml:space="preserve">
+    <value>label_q0_val</value>
+  </data>
+  <data name="&gt;&gt;label_q0_val.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_q0_val.Parent" xml:space="preserve">
+    <value>groupBox_filter</value>
+  </data>
+  <data name="&gt;&gt;label_q0_val.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label_q2.Name" xml:space="preserve">
+    <value>label_q2</value>
+  </data>
+  <data name="&gt;&gt;label_q2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_q2.Parent" xml:space="preserve">
+    <value>groupBox_filter</value>
+  </data>
+  <data name="&gt;&gt;label_q2.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;label_q3.Name" xml:space="preserve">
+    <value>label_q3</value>
+  </data>
+  <data name="&gt;&gt;label_q3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_q3.Parent" xml:space="preserve">
+    <value>groupBox_filter</value>
+  </data>
+  <data name="&gt;&gt;label_q3.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;label_q1.Name" xml:space="preserve">
+    <value>label_q1</value>
+  </data>
+  <data name="&gt;&gt;label_q1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_q1.Parent" xml:space="preserve">
+    <value>groupBox_filter</value>
+  </data>
+  <data name="&gt;&gt;label_q1.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;label_q0.Name" xml:space="preserve">
+    <value>label_q0</value>
+  </data>
+  <data name="&gt;&gt;label_q0.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_q0.Parent" xml:space="preserve">
+    <value>groupBox_filter</value>
+  </data>
+  <data name="&gt;&gt;label_q0.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;label_quaternions.Name" xml:space="preserve">
+    <value>label_quaternions</value>
+  </data>
+  <data name="&gt;&gt;label_quaternions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_quaternions.Parent" xml:space="preserve">
+    <value>groupBox_filter</value>
+  </data>
+  <data name="&gt;&gt;label_quaternions.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;button_filterSelect.Name" xml:space="preserve">
+    <value>button_filterSelect</value>
+  </data>
+  <data name="&gt;&gt;button_filterSelect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_filterSelect.Parent" xml:space="preserve">
+    <value>groupBox_filter</value>
+  </data>
+  <data name="&gt;&gt;button_filterSelect.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;comboBox_filterList.Name" xml:space="preserve">
+    <value>comboBox_filterList</value>
+  </data>
+  <data name="&gt;&gt;comboBox_filterList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_filterList.Parent" xml:space="preserve">
+    <value>groupBox_filter</value>
+  </data>
+  <data name="&gt;&gt;comboBox_filterList.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="groupBox_filter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
+  </data>
+  <data name="groupBox_filter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 12</value>
+  </data>
+  <data name="groupBox_filter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 837</value>
+  </data>
+  <data name="groupBox_filter.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="groupBox_filter.Text" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="&gt;&gt;groupBox_filter.Name" xml:space="preserve">
+    <value>groupBox_filter</value>
+  </data>
+  <data name="&gt;&gt;groupBox_filter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_filter.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox_filter.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="label_gamma_val.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1848,33 +2475,6 @@
   <data name="&gt;&gt;comboBox_filterList.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
-  <data name="groupBox_filter.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
-  </data>
-  <data name="groupBox_filter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>341, 12</value>
-  </data>
-  <data name="groupBox_filter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>312, 837</value>
-  </data>
-  <data name="groupBox_filter.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="groupBox_filter.Text" xml:space="preserve">
-    <value>Filter</value>
-  </data>
-  <data name="&gt;&gt;groupBox_filter.Name" xml:space="preserve">
-    <value>groupBox_filter</value>
-  </data>
-  <data name="&gt;&gt;groupBox_filter.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox_filter.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox_filter.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <metadata name="serialPort.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -1907,6 +2507,57 @@
   </data>
   <data name="&gt;&gt;textBox_log.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;chart_2.Name" xml:space="preserve">
+    <value>chart_2</value>
+  </data>
+  <data name="&gt;&gt;chart_2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_2.Parent" xml:space="preserve">
+    <value>groupBox_graph</value>
+  </data>
+  <data name="&gt;&gt;chart_2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;chart_1.Name" xml:space="preserve">
+    <value>chart_1</value>
+  </data>
+  <data name="&gt;&gt;chart_1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chart_1.Parent" xml:space="preserve">
+    <value>groupBox_graph</value>
+  </data>
+  <data name="&gt;&gt;chart_1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBox_graph.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
+  </data>
+  <data name="groupBox_graph.Location" type="System.Drawing.Point, System.Drawing">
+    <value>659, 12</value>
+  </data>
+  <data name="groupBox_graph.Size" type="System.Drawing.Size, System.Drawing">
+    <value>913, 712</value>
+  </data>
+  <data name="groupBox_graph.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="groupBox_graph.Text" xml:space="preserve">
+    <value>Graph</value>
+  </data>
+  <data name="&gt;&gt;groupBox_graph.Name" xml:space="preserve">
+    <value>groupBox_graph</value>
+  </data>
+  <data name="&gt;&gt;groupBox_graph.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_graph.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox_graph.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="chart_2.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 366</value>
@@ -1955,33 +2606,6 @@
   </data>
   <data name="&gt;&gt;chart_1.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="groupBox_graph.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
-  </data>
-  <data name="groupBox_graph.Location" type="System.Drawing.Point, System.Drawing">
-    <value>659, 12</value>
-  </data>
-  <data name="groupBox_graph.Size" type="System.Drawing.Size, System.Drawing">
-    <value>913, 712</value>
-  </data>
-  <data name="groupBox_graph.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="groupBox_graph.Text" xml:space="preserve">
-    <value>Graph</value>
-  </data>
-  <data name="&gt;&gt;groupBox_graph.Name" xml:space="preserve">
-    <value>groupBox_graph</value>
-  </data>
-  <data name="&gt;&gt;groupBox_graph.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox_graph.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox_graph.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
