@@ -13,17 +13,33 @@ namespace IMU_Test_Calibration
 {
     public partial class f_main : Form
     {
+        /* Chart Variables */
+        long xLimMax = 100, xLimMin = 0;
+        long yLimMax = 4096, yLimMin = -4096;
+
+        /* USB Variables */
         public string buffer;
         public string[] data = new string[10];
-        public string[] acc = new string[3];
-        public string[] gyro = new string[3];
-        public string[] mag = new string[3];
-        public string temp;
         public string[] comStatus = { "Disconnected", "Connected" };
         public f_main()
         {
             InitializeComponent();
             comboBox_comPorts.Items.AddRange(SerialPort.GetPortNames());
+            /* Chart_1 Configuration */
+            chart_1.ChartAreas[0].AxisX.Minimum = xLimMin;
+            chart_1.ChartAreas[0].AxisX.Maximum = xLimMax;
+            chart_1.ChartAreas[0].AxisY.Minimum = yLimMin; 
+            chart_1.ChartAreas[0].AxisY.Maximum = yLimMax;
+
+            chart_1.ChartAreas[0].AxisX.ScaleView.Zoom(xLimMin, xLimMax);
+
+            /* Chart_2 Configuration */
+            chart_2.ChartAreas[0].AxisX.Minimum = xLimMin;
+            chart_2.ChartAreas[0].AxisX.Maximum = xLimMax;
+            chart_2.ChartAreas[0].AxisY.Minimum = yLimMin;
+            chart_2.ChartAreas[0].AxisY.Maximum = yLimMax;
+
+            chart_2.ChartAreas[0].AxisX.ScaleView.Zoom(xLimMin, xLimMax);
         }
 
         private void comboBox_comPorts_SelectedIndexChanged(object sender, EventArgs e)
@@ -94,6 +110,13 @@ namespace IMU_Test_Calibration
             #endregion
         }
 
+        private void timer_1_Tick(object sender, EventArgs e)
+        {
+            /* Chart Update */
+            this.chart_1.Series[0].Points.AddXY((xLimMin + xLimMax) / 2, int.Parse(data[0]));
+            xLimMax++; xLimMin++;
+        }
+
         public void serial_veri(object sender, SerialDataReceivedEventArgs args)
         {
             buffer = serialPort.ReadLine().ToString();
@@ -116,7 +139,8 @@ namespace IMU_Test_Calibration
             label_mz_val.Invoke(new MethodInvoker(delegate { label_mz_val.Text = data[8]; }));
             
             label_temp_val.Invoke(new MethodInvoker(delegate { label_temp_val.Text = data[9]; }));
-            
+
+            serialPort.DiscardInBuffer();
         }
 
         private void button_cancel_Click(object sender, EventArgs e)
