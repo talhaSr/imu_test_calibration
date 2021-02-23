@@ -14,13 +14,27 @@ namespace IMU_Test_Calibration
     public partial class f_main : Form
     {
         /* Chart Variables */
-        long xLimMax = 100, xLimMin = 0;
-        long yLimMax = 4096, yLimMin = -4096;
+        long xLimMax = 300, xLimMin = 0;
+        long yLimMax = 100, yLimMin = -100;
 
         /* USB Variables */
         public string buffer;
         public string[] data = new string[10];
         public string[] comStatus = { "Disconnected", "Connected" };
+
+        /* Axis String Values */
+        public string[] acc_str = new string[3];
+        public string[] gyro_str = new string[3];
+        public string[] mag_str = new string[3];
+        public string temp_str;
+
+        /* Axis Raw Variables */
+        public float[] acc = new float[3];
+        public double[] acc_d = new double[3];
+        public float[] gyro = new float[3];
+        public float[] mag = new float[3];
+        public float temp;
+
         public f_main()
         {
             InitializeComponent();
@@ -49,7 +63,6 @@ namespace IMU_Test_Calibration
 
         private void comboBox_baudrates_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //serialPort.BaudRate = Convert.ToInt32(comboBox_baudrates.SelectedItem);
             serialPort.BaudRate = int.Parse(comboBox_baudrates.SelectedItem.ToString());
         }
 
@@ -112,9 +125,28 @@ namespace IMU_Test_Calibration
 
         private void timer_1_Tick(object sender, EventArgs e)
         {
-            /* Chart Update */
-            this.chart_1.Series[0].Points.AddXY((xLimMin + xLimMax) / 2, int.Parse(data[0]));
-            xLimMax++; xLimMin++;
+            chart_1.ChartAreas[0].AxisX.Minimum = xLimMin;
+            chart_1.ChartAreas[0].AxisX.Maximum = xLimMax;
+            chart_1.ChartAreas[0].AxisY.Minimum = -2;
+            chart_1.ChartAreas[0].AxisY.Maximum = 2;
+            chart_1.ChartAreas[0].AxisX.ScaleView.Zoom(xLimMin, xLimMax);
+
+            chart_2.ChartAreas[0].AxisX.Minimum = xLimMin;
+            chart_2.ChartAreas[0].AxisX.Maximum = xLimMax;
+            chart_2.ChartAreas[0].AxisY.Minimum = yLimMin;
+            chart_2.ChartAreas[0].AxisY.Maximum = yLimMax;
+            chart_2.ChartAreas[0].AxisX.ScaleView.Zoom(xLimMin, xLimMax);
+
+            chart_1.Series[0].Points.AddXY((xLimMin + xLimMax) / 2, acc[0]);
+            chart_1.Series[1].Points.AddXY((xLimMin + xLimMax) / 2, acc[1]);
+            chart_1.Series[2].Points.AddXY((xLimMin + xLimMax) / 2, acc[2]);
+
+            chart_2.Series[0].Points.AddXY((xLimMin + xLimMax) / 2, gyro[0]);
+            chart_2.Series[1].Points.AddXY((xLimMin + xLimMax) / 2, gyro[1]);
+            chart_2.Series[2].Points.AddXY((xLimMin + xLimMax) / 2, gyro[2]);
+            
+            xLimMax++;
+            xLimMin++;
         }
 
         public void serial_veri(object sender, SerialDataReceivedEventArgs args)
@@ -139,6 +171,22 @@ namespace IMU_Test_Calibration
             label_mz_val.Invoke(new MethodInvoker(delegate { label_mz_val.Text = data[8]; }));
             
             label_temp_val.Invoke(new MethodInvoker(delegate { label_temp_val.Text = data[9]; }));
+
+            acc_str[0] = data[0];
+            acc_str[1] = data[1];
+            acc_str[2] = data[2];
+            gyro_str[0] = data[3];
+            gyro_str[1] = data[4];
+            gyro_str[2] = data[5];
+            mag_str[0] = data[6];
+            mag_str[1] = data[7];
+            mag_str[2] = data[8];
+            temp_str = data[9];
+
+            acc = Utils.CalcAccel(acc_str, 1.0f / 2048.0f);
+            gyro = Utils.CalcGyro(gyro_str, 1.0f / 16.4f);
+            mag = Utils.CalcMag(mag_str, 0.15f);
+            temp = Utils.CalcTemp(temp_str, 1.0f / 333.87f);
 
             serialPort.DiscardInBuffer();
         }

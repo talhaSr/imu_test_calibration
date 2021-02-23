@@ -12,7 +12,7 @@ namespace IMU_Test_Calibration
             String[] tempString = bufferStr.Split(delimeter);
             return tempString;
         }
-        public double[] FFT(double[] data, bool dB)
+        public static double[] FFT(double[] data, bool dB)
         {
             double[] fft = new double[data.Length];
             Complex[] fftComplex = new Complex[data.Length];
@@ -30,7 +30,7 @@ namespace IMU_Test_Calibration
             }
             return fft;
         }
-        public float[] CalcAccel(string[] raw, float coefficient)
+        public static float[] CalcAccel(string[] raw, float coefficient)
         {
             float[] acc = new float[raw.Length];
             for (int i = 0; i < raw.Length; i++)
@@ -39,7 +39,7 @@ namespace IMU_Test_Calibration
             }
             return acc;
         }
-        public float[] CalcGyro(string[] raw, float coefficient)
+        public static float[] CalcGyro(string[] raw, float coefficient)
         {
             float[] gyro = new float[raw.Length];
             for (int i = 0; i < raw.Length; i++)
@@ -48,7 +48,7 @@ namespace IMU_Test_Calibration
             }
             return gyro;
         }
-        public float[] CalcMag(string[] raw, float coefficient)
+        public static float[] CalcMag(string[] raw, float coefficient)
         {
             float[] mag = new float[raw.Length];
             for (int i = 0; i < raw.Length; i++)
@@ -57,7 +57,7 @@ namespace IMU_Test_Calibration
             }
             return mag;
         }
-        public float CalcTemp(string raw, float coefficient)
+        public static float CalcTemp(string raw, float coefficient)
         {
             return (float)(int.Parse(raw) * coefficient);
         }
