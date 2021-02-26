@@ -31,16 +31,16 @@ namespace IMU_Test_Calibration
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f_main));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series21 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series22 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series23 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series24 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.picBox_logo_1 = new System.Windows.Forms.PictureBox();
             this.groupBox_imuData = new System.Windows.Forms.GroupBox();
             this.label_temp_val = new System.Windows.Forms.Label();
@@ -461,6 +461,11 @@ namespace IMU_Test_Calibration
             // 
             resources.ApplyResources(this.comboBox_filterList, "comboBox_filterList");
             this.comboBox_filterList.FormattingEnabled = true;
+            this.comboBox_filterList.Items.AddRange(new object[] {
+            resources.GetString("comboBox_filterList.Items"),
+            resources.GetString("comboBox_filterList.Items1"),
+            resources.GetString("comboBox_filterList.Items2"),
+            resources.GetString("comboBox_filterList.Items3")});
             this.comboBox_filterList.Name = "comboBox_filterList";
             // 
             // serialPort
@@ -485,55 +490,55 @@ namespace IMU_Test_Calibration
             // 
             // chart_2
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chart_2.ChartAreas.Add(chartArea5);
+            chartArea7.Name = "ChartArea1";
+            this.chart_2.ChartAreas.Add(chartArea7);
             this.chart_2.Cursor = System.Windows.Forms.Cursors.Cross;
-            legend5.Name = "Legend1";
-            this.chart_2.Legends.Add(legend5);
+            legend7.Name = "Legend1";
+            this.chart_2.Legends.Add(legend7);
             resources.ApplyResources(this.chart_2, "chart_2");
             this.chart_2.Name = "chart_2";
             this.chart_2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series13.ChartArea = "ChartArea1";
-            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series13.Legend = "Legend1";
-            series13.Name = "x";
-            series14.ChartArea = "ChartArea1";
-            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series14.Legend = "Legend1";
-            series14.Name = "y";
-            series15.ChartArea = "ChartArea1";
-            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series15.Legend = "Legend1";
-            series15.Name = "z";
-            this.chart_2.Series.Add(series13);
-            this.chart_2.Series.Add(series14);
-            this.chart_2.Series.Add(series15);
+            series19.ChartArea = "ChartArea1";
+            series19.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series19.Legend = "Legend1";
+            series19.Name = "x";
+            series20.ChartArea = "ChartArea1";
+            series20.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series20.Legend = "Legend1";
+            series20.Name = "y";
+            series21.ChartArea = "ChartArea1";
+            series21.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series21.Legend = "Legend1";
+            series21.Name = "z";
+            this.chart_2.Series.Add(series19);
+            this.chart_2.Series.Add(series20);
+            this.chart_2.Series.Add(series21);
             // 
             // chart_1
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chart_1.ChartAreas.Add(chartArea6);
+            chartArea8.Name = "ChartArea1";
+            this.chart_1.ChartAreas.Add(chartArea8);
             this.chart_1.Cursor = System.Windows.Forms.Cursors.Cross;
-            legend6.Name = "Legend1";
-            this.chart_1.Legends.Add(legend6);
+            legend8.Name = "Legend1";
+            this.chart_1.Legends.Add(legend8);
             resources.ApplyResources(this.chart_1, "chart_1");
             this.chart_1.Name = "chart_1";
             this.chart_1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series16.ChartArea = "ChartArea1";
-            series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series16.Legend = "Legend1";
-            series16.Name = "x";
-            series17.ChartArea = "ChartArea1";
-            series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series17.Legend = "Legend1";
-            series17.Name = "y";
-            series18.ChartArea = "ChartArea1";
-            series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series18.Legend = "Legend1";
-            series18.Name = "z";
-            this.chart_1.Series.Add(series16);
-            this.chart_1.Series.Add(series17);
-            this.chart_1.Series.Add(series18);
+            series22.ChartArea = "ChartArea1";
+            series22.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series22.Legend = "Legend1";
+            series22.Name = "x";
+            series23.ChartArea = "ChartArea1";
+            series23.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series23.Legend = "Legend1";
+            series23.Name = "y";
+            series24.ChartArea = "ChartArea1";
+            series24.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series24.Legend = "Legend1";
+            series24.Name = "z";
+            this.chart_1.Series.Add(series22);
+            this.chart_1.Series.Add(series23);
+            this.chart_1.Series.Add(series24);
             // 
             // fileSystemWatcher1
             // 

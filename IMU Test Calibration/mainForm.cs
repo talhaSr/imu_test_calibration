@@ -16,12 +16,15 @@ namespace IMU_Test_Calibration
         /* Chart Variables */
         long xLimMax = 300, xLimMin = 0;
         long yLimMax = 100, yLimMin = -100;
+        
+        
 
         /* USB Variables */
         public string buffer;
         public string[] data = new string[10];
         public string[] comStatus = { "Disconnected", "Connected" };
 
+        
         /* Axis String Values */
         public string[] acc_str = new string[3];
         public string[] gyro_str = new string[3];

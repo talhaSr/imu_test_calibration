@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AHRS.cs" />
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
     </Compile>
